@@ -29,3 +29,18 @@ git remote add origin https://github.com/alphaplus14/interpolice-back.git
 -hacemos la primer actualizacion local y remota:
 local:git commit -m "inicio del proyecto"
 Remota: git push -u origin main
+-Revision del package.json: verificar las dependencias
+-modifcamos el package para ejecuccion del proyecto:
+"start" : "node index.js",
+"dev" : "nodemon index.js",
+
+## codificacion del proyecto
+
+-crear el archivo principal: index.js
+-configurar los pluggings: nodemon,cors, hacer la primera prueba npm run dev (modo desarrollador) npm start (modo producction)
+
+## Creacion del modulo conexion a la basa de datos
+
+-importamos la libreria mysql2 y hacemos la conexion de acuerdo al ejemplo
+
+## Codificacion del modulo ciudadano
