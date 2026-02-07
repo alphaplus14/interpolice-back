@@ -8,7 +8,7 @@ express: Framework node js => gestionar APIS protocolo http
 node js: js standalone - instalado en mi pc --> en consola: node -v
 nodemon: plugin para usar en desarrollo - No se usa en produccion
 mysql2: gestionar las interacciones con la bd
-cors: plugin para la gestion de cors
+cors: plugin para la gestion de cors en diferentes ambientes de programacion o IPS
 env: variables globales del proyecto
 
 ##HERRAMIENTAS FRONT
@@ -31,8 +31,8 @@ local:git commit -m "inicio del proyecto"
 Remota: git push -u origin main
 -Revision del package.json: verificar las dependencias
 -modifcamos el package para ejecuccion del proyecto:
-"start" : "node index.js",
-"dev" : "nodemon index.js",
+"start" : "node index.js" - Que es para el modo produccion, es decir para ejecutar el proyecto en un entorno real, sin necesidad de estar monitoreando los cambios en el codigo.
+"dev" : "nodemon index.js" - Es para el modo desarrollo, es decir para ejecutar el proyecto en un entorno de desarrollo, donde se monitorean los cambios en el codigo y se reinicia automaticamente el servidor cada vez que se detecta un cambio.
 
 ## codificacion del proyecto
 

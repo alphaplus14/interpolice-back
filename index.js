@@ -7,9 +7,10 @@ import { usuario } from "./modules/usuario.js";
 
 //instanciamos la libreria en un objeto - app
 const app = express();
-app.use(express.json());
-app.use(cors());
 const port = 3000;
+app.use(express.json());// para que el servidor entienda json en el body
+app.use(cors());
+
 
 //primer recurso o endpoint
 app.get("/", (request, response) => {
@@ -26,10 +27,11 @@ app.get("/", (request, response) => {
 //   });
 // });
 
+//rutas 
 app.use("/", ciudadano);
 app.use("/", usuario);
 
-//encendemos el servicio -prendemos la API
+//encendemos el servicio -prendemos la API, el metodo listen viene de la libreria express
 app.listen(port, () => {
   console.log(`Servidor corriendo en : ${port}`);
 });
