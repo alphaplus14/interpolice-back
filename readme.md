@@ -44,3 +44,10 @@ Remota: git push -u origin main
 -importamos la libreria mysql2 y hacemos la conexion de acuerdo al ejemplo
 
 ## Codificacion del modulo ciudadano
+
+## Implementacion de arquitectura por capas (N_TIER)
+Controller: controlador del modulo,maneja la logica de peticiones y respuestas
+Router: se encarga de construir los endpoints o rutas de la API,En ella podemos inyectar los middleware 
+Models: Se encarga de la interaccion (Consultas) con el sistema gestor de base de datos SGBD, implementa la logica dele negocio
+Middleware: Es una capa intermedia entre el cliente y la API(ejemplo validar token,validar IP mediante cors)
+Helpers:ayudas, ayudante, clases o funciones reusables del sistema. Por ejemplo, un sistema de errores.

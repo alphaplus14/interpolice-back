@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Pruebas de la API",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
