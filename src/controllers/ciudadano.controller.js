@@ -10,7 +10,7 @@ export const getCiudadanos = async (req, res) => {
     res.json({ results });
   } catch (error) {
     res.status(500).json({
-      error: "Error al listar los ciudadanos",
+      error: "Error al listar los ciudadanos" + error,
     });
   }
 };
@@ -38,10 +38,10 @@ export const createciudadanos = async (req, res) => {
     apellidos: req.body.apellidos,
     apodo: req.body.apodo,
     fechaNace: req.body.fechaNace,
-    planetaOrigen: req.body.planetaOrigen,
+    planetaOrigin: req.body.planetaOrigen,
     planetaReside: req.body.planetaReside,
     foto: req.body.foto,
-    codigoqr: req.body.codigoqr,
+    codigoQr: req.body.codigoqr,
     estado: req.body.estado,
   };
 
@@ -79,10 +79,10 @@ export const updateciudadanos = async (req, res) => {
     apellidos: req.body.apellidos,
     apodo: req.body.apodo,
     fechaNace: req.body.fechaNace,
-    planetaOrigen: req.body.planetaOrigen,
+    planetaOrigin: req.body.planetaOrigen,
     planetaReside: req.body.planetaReside,
     foto: req.body.foto,
-    codigoqr: req.body.codigoqr,
+    codigoQr: req.body.codigoqr,
     estado: req.body.estado,
   };
 

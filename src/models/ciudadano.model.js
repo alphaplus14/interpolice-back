@@ -2,11 +2,11 @@
 
 //importamos la conexion
 
-import { cnx } from "./bdatos.js";
+import { db } from "./bdatos.js";
 
 //activar el manejo de promesas (asyncronicas)
 
-const db = cnx.promise();
+// const db = cnx.promise();
 
 //creamos el modulo : usando el concepto de orientado a objetos
 

@@ -51,3 +51,8 @@ Router: se encarga de construir los endpoints o rutas de la API,En ella podemos 
 Models: Se encarga de la interaccion (Consultas) con el sistema gestor de base de datos SGBD, implementa la logica dele negocio
 Middleware: Es una capa intermedia entre el cliente y la API(ejemplo validar token,validar IP mediante cors)
 Helpers:ayudas, ayudante, clases o funciones reusables del sistema. Por ejemplo, un sistema de errores.
+
+##Configuracion de variables de entorno/Globales
+Sirven para mejorar la confidencialidad, mejor mantenibilidad en node js: Variables .env
+Instala paquete dotenv y configurarlo (nota Nodejs ya lo implementa nativo)
+-npm i dotenv
